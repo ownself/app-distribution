@@ -1,0 +1,33 @@
+name: Validate generated manifests
+
+on:
+  push:
+    paths:
+      - "apps/**"
+      - "scripts/**"
+      - "Formula/**"
+      - "bucket/**"
+      - ".github/workflows/validate-generated.yml"
+  pull_request:
+    paths:
+      - "apps/**"
+      - "scripts/**"
+      - "Formula/**"
+      - "bucket/**"
+      - ".github/workflows/validate-generated.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate generated manifests
+        run: python scripts/generate_manifests.py --check

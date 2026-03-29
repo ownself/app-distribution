@@ -1,0 +1,30 @@
+{
+  "name": "wewa",
+  "description": "Display web content as desktop wallpaper",
+  "homepage": "https://github.com/ownself/wewa",
+  "license": "MIT",
+  "repository": {
+    "owner": "ownself",
+    "name": "wewa"
+  },
+  "targets": {
+    "homebrew": {
+      "formula_name": "wewa",
+      "binary": "wewa",
+      "docs": [
+        "README.md"
+      ],
+      "macos": {
+        "arm64": "wewa-macos-arm64.tar.gz",
+        "x64": "wewa-macos-x64.tar.gz"
+      }
+    },
+    "scoop": {
+      "manifest_name": "wewa",
+      "binary": "wewa.exe",
+      "windows": {
+        "64bit": "wewa-windows-x64.zip"
+      }
+    }
+  }
+}
