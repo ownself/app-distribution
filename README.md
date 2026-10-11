@@ -43,13 +43,13 @@ Current example: `apps/wewa.json`
 
 The generator reads the latest GitHub release, matches the configured asset names, and fills in version numbers, URLs, and SHA-256 values automatically.
 
-## Initial packaged app
+## Packaged app
 
-`wewa` is seeded from `https://github.com/ownself/wewa`.
+`wewa` is distributed from `https://github.com/ownself/wewa`.
 
-Current latest release at scaffold time:
+Currently packaged release:
 
-- Tag: `v0.3.0`
+- Tag: `v0.4.0`
 - Homebrew assets:
   - `wewa-macos-arm64.tar.gz`
   - `wewa-macos-x64.tar.gz`
@@ -85,6 +85,13 @@ brew tap ownself/app-distribution https://github.com/ownself/app-distribution
 brew install ownself/app-distribution/wewa
 ```
 
+Update an existing installation:
+
+```powershell
+brew update
+brew upgrade ownself/app-distribution/wewa
+```
+
 If you rename the repository, replace `ownself/app-distribution` accordingly.
 
 ## Scoop usage
@@ -94,6 +101,13 @@ After publishing this repository to GitHub, use it as a bucket:
 ```powershell
 scoop bucket add ownself-app-distribution https://github.com/ownself/app-distribution
 scoop install ownself-app-distribution/wewa
+```
+
+Update an existing installation:
+
+```powershell
+scoop update
+scoop update wewa
 ```
 
 If you rename the repository, replace the bucket URL and bucket name accordingly.
