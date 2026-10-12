@@ -49,7 +49,7 @@ The generator reads the latest GitHub release, matches the configured asset name
 
 Currently packaged release:
 
-- Tag: `v0.4.0`
+- Tag: `v0.4.1`
 - Homebrew assets:
   - `wewa-macos-arm64.tar.gz`
   - `wewa-macos-x64.tar.gz`
