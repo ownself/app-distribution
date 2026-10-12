@@ -1,12 +1,12 @@
 {
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Display web content as desktop wallpaper",
   "homepage": "https://github.com/ownself/wewa",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/ownself/wewa/releases/download/v0.4.1/wewa-windows-x64.zip",
-      "hash": "1c61648f2642f364c8863fe098fbdd10e0d43d9fb9ba3a9878a8865014b72826"
+      "url": "https://github.com/ownself/wewa/releases/download/v0.4.2/wewa-windows-x64.zip",
+      "hash": "f9c6dd75d07f68741dc5e8378a9381ec7eb44d146cbb09155c7af41be703dd60"
     }
   },
   "bin": "wewa.exe",

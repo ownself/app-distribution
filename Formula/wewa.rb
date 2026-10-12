@@ -1,16 +1,16 @@
 class Wewa < Formula
   desc "Display web content as desktop wallpaper"
   homepage "https://github.com/ownself/wewa"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ownself/wewa/releases/download/v0.4.1/wewa-macos-arm64.tar.gz"
-      sha256 "3fd104be1b5bf2e077f860a1b14352fe5c95c8d65ae623ee22e6c08e3de0093b"
+      url "https://github.com/ownself/wewa/releases/download/v0.4.2/wewa-macos-arm64.tar.gz"
+      sha256 "55ff226a75474c3dd8ab396973293b74d6f3901b0f465e84f101a3f3e70253f3"
     else
-      url "https://github.com/ownself/wewa/releases/download/v0.4.1/wewa-macos-x64.tar.gz"
-      sha256 "0bac62de343f6ea8266d72a08c7f2bdb3b4149a66ebfa52bf9cc2486352459b6"
+      url "https://github.com/ownself/wewa/releases/download/v0.4.2/wewa-macos-x64.tar.gz"
+      sha256 "b451e5ce2f860c1553900190a47bcd4239977d82ed509c9b3c0cb6779490fc92"
     end
   end
 
